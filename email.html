@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie-me um E-mail</title>
+    <link rel="stylesheet" href="estilos/email.css">
+</head>
+<body>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="digite seu nome..." required>
+            
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="digite seu E-mail..." required>
+            
+            <label>mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem..." required></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="d501f65f-84d9-4eab-b563-86f6ea79a374">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/portfolio-definitivo/obrigado.html">
+        </form>
+    </section>
+</body>
+</html>
